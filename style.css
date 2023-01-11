@@ -65,4 +65,35 @@ body{
     border-radius: 50%;
     color: #fff;
     transition: all .5s;
+    background-color: #6565e7;
+}
+
+.box p span.blink{
+    box-shadow: 0px 0px 6px #6565e7,
+                0px 0px 12px #6565e7,
+                0px 0px 18px #6565e7,
+                0px 0px 24px #6565e7
+}
+
+@media (max-width: 768px)
+{
+    .box 
+    {
+        width: 300px;
+    }
+    .box h4 
+    {
+        font-size: 1.5rem;
+    }
+    .box textarea
+    {
+        width: 100% !important;
+    }
+    .box p {
+        position: relative;
+        top: 0;
+        right: 0;
+        transform: translateY(0);
+        margin-bottom: 10px;
+    }
 }
